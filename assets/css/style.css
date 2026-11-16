@@ -124,7 +124,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cafe); outline-
 .galeria { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .g { padding: 0; border: 0; background: var(--creme-2); cursor: zoom-in; overflow: hidden; border-radius: 6px; aspect-ratio: 4 / 5; }
 .g img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
-.g--largo { grid-column: span 2; aspect-ratio: 16 / 10; }
+.g--destaque { grid-column: span 2; aspect-ratio: 1 / 1; }
+.g--destaque img { object-position: 50% 60%; }
 .portfolio__cta { margin-top: 24px; }
 
 /* ---------- Serviços ---------- */
@@ -243,6 +244,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cafe); outline-
   .secao-topo .eyebrow { width: 100%; margin-bottom: -6px; }
   .abas { margin-top: 0; width: 280px; }
   .galeria { grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .g--destaque { aspect-ratio: auto; }
   .g:hover img { transform: scale(1.04); }
   .portfolio__cta { display: flex; width: fit-content; margin: 36px auto 0; }
 
