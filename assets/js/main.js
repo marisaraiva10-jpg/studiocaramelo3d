@@ -101,5 +101,22 @@
     alvos.forEach(function (el) { el.classList.add("revelar"); io.observe(el); });
   }
 
+  // ===== Feed do Instagram (Behold) =====
+  // Cole aqui o "Feed ID" gerado em behold.so depois de conectar o Instagram.
+  // Enquanto estiver vazio, o site mostra só o perfil e o botão "Seguir".
+  var BEHOLD_FEED_ID = "";
+
+  if (BEHOLD_FEED_ID) {
+    var feed = document.getElementById("insta-feed");
+    var widget = document.createElement("behold-widget");
+    widget.setAttribute("feed-id", BEHOLD_FEED_ID);
+    feed.appendChild(widget);
+    feed.hidden = false;
+    var s = document.createElement("script");
+    s.type = "module";
+    s.src = "https://w.behold.so/widget.js";
+    document.head.appendChild(s);
+  }
+
   document.getElementById("ano").textContent = new Date().getFullYear();
 })();
