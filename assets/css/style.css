@@ -103,6 +103,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cafe); outline-
 .tablet--a { width: 84%; right: -8%; top: 0; transform: rotate(-7deg); z-index: 2; }
 .tablet--b { width: 58%; left: -12%; top: 90px; transform: rotate(10deg); }
 
+.microcopy { margin-top: 12px; font-size: .9rem; font-weight: 500; text-align: center; opacity: .95; }
+
+/* ---------- Dor / virada ---------- */
+.dor { background: linear-gradient(180deg, #5A3D2B 0%, var(--cafe-escuro) 100%); color: var(--branco); }
+.dor__frase { font-family: var(--serif); font-size: 1.9rem; line-height: 1.15; margin-bottom: 18px; }
+.dor__frase em { color: var(--caramelo-claro); }
+.dor__texto { font-size: 1.02rem; color: rgba(255, 253, 249, .9); margin-bottom: 28px; }
+.beneficios { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.beneficios li { background: rgba(255, 253, 249, .07); border: 1px solid rgba(255, 253, 249, .16); border-left: 3px solid var(--caramelo-claro); border-radius: 6px; padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; }
+.beneficios strong { font-size: 1.08rem; font-weight: 600; }
+.beneficios span { font-size: .95rem; color: rgba(255, 253, 249, .85); }
+
 /* ---------- Portfólio ---------- */
 .portfolio { background: var(--creme); }
 .abas { display: flex; margin-top: 20px; background: var(--branco); border: 1px solid var(--linha-cafe); border-radius: 999px; padding: 4px; }
@@ -124,12 +136,30 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cafe); outline-
 .servicos__lista strong { font-size: 1.1rem; font-weight: 600; }
 .servicos__lista span { font-size: .98rem; color: rgba(255, 253, 249, .85); }
 
+.incluso { margin-top: 32px; background: rgba(255, 253, 249, .07); border: 1px solid rgba(255, 253, 249, .16); border-radius: 8px; padding: 20px; }
+.incluso__titulo { font-family: var(--serif); font-size: 1.35rem; margin-bottom: 12px; }
+.incluso ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.incluso li { position: relative; padding-left: 28px; font-weight: 500; }
+.incluso li::before { content: ""; position: absolute; left: 3px; top: 6px; width: 12px; height: 7px; border-left: 2px solid var(--caramelo-claro); border-bottom: 2px solid var(--caramelo-claro); transform: rotate(-45deg); }
+
+/* ---------- Como funciona ---------- */
+.passos { background: var(--creme); }
+.passos__lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.passos__lista li { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; position: relative; }
+.passos__lista li:not(:last-child)::after { content: ""; position: absolute; left: 21px; top: 60px; bottom: -14px; width: 1px; background: rgba(176, 122, 69, .45); }
+.passos__n { flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--caramelo); color: var(--branco); display: grid; place-items: center; font-family: var(--serif); font-size: 1.35rem; }
+.passos__lista div { display: flex; flex-direction: column; padding-top: 2px; }
+.passos__lista strong { font-size: 1.08rem; font-weight: 600; }
+.passos__lista span:not(.passos__n) { color: var(--texto-suave); font-size: .98rem; }
+.passos__cta { margin-top: 24px; }
+
 /* ---------- Sobre ---------- */
 .sobre { background: linear-gradient(170deg, #BD8B58 0%, var(--caramelo) 100%); color: var(--branco); }
 .sobre__inner { display: grid; gap: 40px; }
 .sobre__texto { text-align: center; }
 .sobre__texto h2 { margin-bottom: 12px; }
-.sobre__texto p { font-weight: 500; font-size: 1.05rem; max-width: 30em; margin: 0 auto; }
+.sobre__texto p { font-weight: 500; font-size: 1.05rem; max-width: 30em; margin: 0 auto 14px; }
+.sobre__texto .sobre__assinatura { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 1.45rem; line-height: 1.25; margin-top: 22px; margin-bottom: 0; }
 
 .moldura { margin: 0 auto 22px; position: relative; width: min(82%, 380px); padding: 0 16px 16px 0; }
 .moldura::before { content: ""; position: absolute; inset: 16px 0 0 16px; border: 1px solid var(--linha-clara); border-radius: 999px 999px 4px 4px; }
@@ -152,6 +182,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cafe); outline-
 .final__inner { position: relative; display: flex; flex-direction: column; align-items: center; gap: 26px; }
 .final h2 { font-size: 2.2rem; }
 .final h2 em { color: var(--caramelo-claro); }
+.final__sub { font-size: 1.05rem; color: rgba(255, 253, 249, .9); max-width: 30em; margin-top: -8px; }
 .insta { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; text-decoration: none; }
 
 /* ---------- Rodapé ---------- */
@@ -219,6 +250,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cafe); outline-
   .servicos__lista li, .servicos__lista li:last-child { border: 0; border-top: 1px solid rgba(255, 253, 249, .3); padding: 20px 0 0; }
   .servicos__lista li::before { top: -5px; }
 
+  .microcopy { text-align: left; }
+  .dor__frase { font-size: 2.6rem; max-width: 22em; }
+  .dor__texto { max-width: 40em; font-size: 1.08rem; }
+  .beneficios { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .incluso ul { grid-template-columns: repeat(2, 1fr); }
+  .passos__lista { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .passos__lista li { flex-direction: column; }
+  .passos__lista li:not(:last-child)::after { left: 56px; right: -12px; top: 36px; bottom: auto; width: auto; height: 1px; }
+  .passos__cta { display: flex; width: fit-content; margin: 36px auto 0; }
   .sobre__inner { grid-template-columns: 1fr 1.2fr; gap: 72px; align-items: center; }
   .sobre__texto { text-align: left; }
   .sobre__texto p { margin: 0; }
