@@ -156,9 +156,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cafe); outline-
 /* ---------- Sobre ---------- */
 .sobre { background: linear-gradient(170deg, #BD8B58 0%, var(--caramelo) 100%); color: var(--branco); }
 .sobre__inner { display: grid; gap: 40px; }
-.sobre__texto { text-align: center; }
+.sobre__texto { text-align: left; }
 .sobre__texto h2 { margin-bottom: 12px; }
-.sobre__texto p { font-weight: 500; font-size: 1.05rem; max-width: 30em; margin: 0 auto 14px; }
+.sobre__texto p { font-weight: 500; font-size: 1.05rem; max-width: 30em; margin: 0 0 14px; }
 .sobre__texto .sobre__assinatura { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 1.45rem; line-height: 1.25; margin-top: 22px; margin-bottom: 0; }
 
 .moldura { margin: 0 auto 22px; position: relative; width: min(82%, 380px); padding: 0 16px 16px 0; }
