@@ -72,8 +72,7 @@ section { padding: 64px 0; position: relative; }
 .btn--cafe { background: var(--cafe); color: var(--branco); box-shadow: 0 10px 24px -12px rgba(59, 38, 24, .7); }
 .btn--claro { background: var(--branco); color: var(--cafe); }
 .btn--pequeno { padding: 9px 18px; min-height: 0; font-size: .9rem; }
-.btn--grande { font-size: 1.05rem; }
-.btn--cheio { width: 100%; }
+.btn--cheio { width: 100%; padding-left: 14px; padding-right: 14px; gap: 8px; font-size: .97rem; white-space: nowrap; }
 .ico { width: 22px; height: 22px; flex: none; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--cafe); outline-offset: 3px; }
 
@@ -192,7 +191,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cafe); outline-
   :root { --gutter: 40px; --topo-h: 72px; }
   section { padding: 96px 0; }
   h2 { font-size: 2.8rem; }
-  .btn--cheio { width: auto; }
+  .btn--cheio { width: auto; padding-left: 28px; padding-right: 28px; font-size: 1rem; }
   .topo__logo img { width: 150px; }
   .topo__nav { display: flex; gap: 32px; }
   .topo__nav a { color: var(--branco); text-decoration: none; font-size: .95rem; font-weight: 500; }
