@@ -18,9 +18,9 @@
     var msg = MENSAGENS[a.dataset.msg] || MENSAGENS.geral;
     a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg);
     a.addEventListener("click", function () {
-      // Conversões (só disparam se o Pixel da Meta / Google Analytics estiverem instalados)
-      if (typeof window.fbq === "function") window.fbq("track", "Contact", { content_name: a.dataset.msg || "geral" });
-      if (typeof window.gtag === "function") window.gtag("event", "whatsapp_click", { origem: a.dataset.msg || "geral" });
+      // Avisa o Google Tag Manager; lá o evento vira "Contact" no Pixel da Meta.
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "whatsapp_click", origem: a.dataset.msg || "geral" });
     });
   });
 
@@ -104,7 +104,7 @@
   // ===== Feed do Instagram (Behold) =====
   // Cole aqui o "Feed ID" gerado em behold.so depois de conectar o Instagram.
   // Enquanto estiver vazio, o site mostra só o perfil e o botão "Seguir".
-  var BEHOLD_FEED_ID = "";
+  var BEHOLD_FEED_ID = "00VAGgA8O8w4HzTdkPOx";
 
   if (BEHOLD_FEED_ID) {
     var feed = document.getElementById("insta-feed");
