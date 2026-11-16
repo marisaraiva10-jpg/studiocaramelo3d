@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Studio Caramelo 3D | Renderização 3D para arquitetas</title>
-  <meta name="description" content="Renders 3D realistas, modelagem, plantas humanizadas, imagens 360º e vídeos para arquitetas e escritórios. Você cria o projeto, a Caramelo cuida da apresentação. Peça seu orçamento pelo WhatsApp.">
+  <meta name="description" content="Renders 3D realistas para arquitetas. Você cria o projeto, a Caramelo cuida da apresentação. Peça seu orçamento pelo WhatsApp.">
   <meta name="theme-color" content="#B07A45">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Studio Caramelo 3D | Renderização 3D para arquitetas">
   <meta property="og:description" content="Você cria o projeto. A Caramelo cuida da apresentação. Peça seu orçamento pelo WhatsApp.">
-  <meta property="og:url" content="https://marisaraiva10-jpg.github.io/studiocaramelo3d/">
-  <meta property="og:image" content="https://marisaraiva10-jpg.github.io/studiocaramelo3d/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://studiocaramelo3d.pages.dev/">
+  <meta property="og:image" content="https://studiocaramelo3d.pages.dev/assets/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -22,50 +22,40 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
+  <link rel="stylesheet" href="assets/css/style.css?v=4">
 </head>
 <body>
 
-  <!-- ===== Cabeçalho ===== -->
   <header class="topo" id="topo">
     <div class="topo__inner">
       <a href="#inicio" class="topo__logo" aria-label="Studio Caramelo 3D, início">
         <img src="assets/img/logo-branco.png" alt="Caramelo 3D" width="150" height="35">
       </a>
       <nav class="topo__nav" aria-label="Principal">
-        <a href="#servicos">Serviços</a>
         <a href="#portfolio">Portfólio</a>
-        <a href="#como-funciona">Como funciona</a>
+        <a href="#servicos">Serviços</a>
         <a href="#sobre">Sobre</a>
       </nav>
-      <a class="btn btn--claro btn--pequeno wpp" data-msg="geral" href="#" target="_blank" rel="noopener">Pedir orçamento</a>
+      <a class="btn btn--claro btn--pequeno wpp" data-msg="geral" href="#" target="_blank" rel="noopener">Orçamento</a>
     </div>
   </header>
 
   <main>
 
-    <!-- ===== Hero ===== -->
+    <!-- Hero -->
     <section class="hero" id="inicio">
       <img class="hero__swash" src="assets/img/logo-branco.png" alt="" aria-hidden="true">
       <div class="hero__inner">
         <div class="hero__texto">
-          <p class="eyebrow">Renderização 3D para arquitetas</p>
-          <h1>Você cria o projeto.<br><em>A Caramelo cuida da apresentação.</em></h1>
-          <p class="hero__sub">Imagens realistas que fazem o seu cliente se encantar antes mesmo da obra começar, sem você perder noites modelando, ajustando material e esperando render.</p>
-          <div class="hero__ctas">
-            <a class="btn btn--cafe wpp" data-msg="geral" href="#" target="_blank" rel="noopener">
-              <svg class="ico" aria-hidden="true"><use href="#i-wpp"/></svg>
-              Pedir orçamento no WhatsApp
-            </a>
-            <a class="link-seta" href="#portfolio">Ver portfólio</a>
-          </div>
-          <ul class="hero__selos">
-            <li>+3 anos de experiência</li>
-            <li>Atendimento próximo</li>
-            <li>2 alterações inclusas</li>
-          </ul>
+          <p class="eyebrow">Render 3D para arquitetas</p>
+          <h1>Você cria o projeto. <em>A Caramelo cuida da apresentação.</em></h1>
+          <p class="hero__sub">Imagens realistas que encantam o seu cliente antes da obra começar.</p>
+          <a class="btn btn--cafe btn--cheio wpp" data-msg="geral" href="#" target="_blank" rel="noopener">
+            <svg class="ico" aria-hidden="true"><use href="#i-wpp"/></svg>
+            Pedir orçamento no WhatsApp
+          </a>
         </div>
         <div class="hero__visual" aria-hidden="true">
           <div class="tablet tablet--a"><img src="assets/img/hero-cozinha.webp" alt="" width="1170" height="649" fetchpriority="high"></div>
@@ -74,167 +64,61 @@
       </div>
     </section>
 
-    <!-- ===== Dor / identificação ===== -->
-    <section class="dor">
-      <div class="container">
-        <p class="dor__frase">Arquitetas não terceirizam o 3D porque não sabem fazer.<br><em>Terceirizam porque sabem o valor do próprio tempo.</em></p>
-        <div class="dor__grid">
-          <div>
-            <span class="dor__num">01</span>
-            <p>Horas modelando, procurando textura e corrigindo iluminação que poderiam estar no projeto, no cliente ou no seu descanso.</p>
-          </div>
-          <div>
-            <span class="dor__num">02</span>
-            <p>Um render artificial desvaloriza o projeto. A IA ajuda, mas ainda não entrega textura, luz e proporção com cuidado de verdade.</p>
-          </div>
-          <div>
-            <span class="dor__num">03</span>
-            <p>Quando o cliente <strong>enxerga</strong> o projeto pronto, ele entende, se emociona e fecha com mais facilidade.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Serviços ===== -->
-    <section class="servicos" id="servicos">
-      <div class="container">
-        <header class="secao-topo">
-          <p class="eyebrow eyebrow--caramelo">O que fazemos</p>
-          <h2>Nossos serviços</h2>
-        </header>
-        <div class="servicos__grid">
-          <article class="card">
-            <h3>Renderização 3D de alta qualidade</h3>
-            <p>Transformamos sua maquete em imagens realistas de altíssima qualidade, prontas para o portfólio ou para as suas propostas comerciais.</p>
-            <a class="card__link wpp" data-msg="render" href="#" target="_blank" rel="noopener">Orçar renderização</a>
-          </article>
-          <article class="card">
-            <h3>Modelagem 3D completa</h3>
-            <p>Criamos sua maquete 3D do zero. Basta enviar os arquivos 2D e nós transformamos em uma maquete detalhada e impecável.</p>
-            <a class="card__link wpp" data-msg="modelagem" href="#" target="_blank" rel="noopener">Orçar modelagem</a>
-          </article>
-          <article class="card">
-            <h3>Plantas baixas humanizadas</h3>
-            <p>O 3D da sua planta baixa em alta resolução, com todos os detalhes, para o cliente entender o projeto como um todo.</p>
-            <a class="card__link wpp" data-msg="planta" href="#" target="_blank" rel="noopener">Orçar planta humanizada</a>
-          </article>
-          <article class="card">
-            <h3>Imagens 360º</h3>
-            <p>Uma experiência imersiva dentro do projeto, para o cliente se sentir no ambiente e enxergar cada cantinho com detalhe.</p>
-            <a class="card__link wpp" data-msg="360" href="#" target="_blank" rel="noopener">Orçar imagens 360º</a>
-          </article>
-          <article class="card">
-            <h3>Vídeos renderizados</h3>
-            <p>A sensação de ver o projeto pronto, ganhando vida com movimento. Não tem como o seu cliente não se encantar.</p>
-            <a class="card__link wpp" data-msg="video" href="#" target="_blank" rel="noopener">Orçar vídeo</a>
-          </article>
-          <article class="card card--destaque">
-            <h3>Não sabe qual escolher?</h3>
-            <p>Conte um pouco sobre o seu projeto e a gente monta junto com você o pacote ideal para a sua apresentação.</p>
-            <a class="btn btn--claro wpp" data-msg="geral" href="#" target="_blank" rel="noopener">
-              <svg class="ico" aria-hidden="true"><use href="#i-wpp"/></svg>
-              Falar com a Caramelo
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Portfólio ===== -->
+    <!-- Portfólio -->
     <section class="portfolio" id="portfolio">
       <div class="container">
-        <header class="secao-topo secao-topo--linha">
-          <div>
-            <p class="eyebrow eyebrow--caramelo">Portfólio</p>
-            <h2>Projetos que ganharam vida</h2>
-          </div>
+        <header class="secao-topo">
+          <p class="eyebrow eyebrow--caramelo">Portfólio</p>
+          <h2>Projetos que ganharam vida</h2>
           <div class="abas" role="tablist" aria-label="Tipo de imagem">
-            <button role="tab" aria-selected="true" aria-controls="port-internas" id="aba-internas" data-aba="internas">Internas</button>
-            <button role="tab" aria-selected="false" aria-controls="port-externas" id="aba-externas" data-aba="externas" tabindex="-1">Externas</button>
+            <button role="tab" aria-selected="true" aria-controls="port-internas" id="aba-internas">Internas</button>
+            <button role="tab" aria-selected="false" aria-controls="port-externas" id="aba-externas" tabindex="-1">Externas</button>
           </div>
         </header>
 
         <div class="galeria galeria--internas" id="port-internas" role="tabpanel" aria-labelledby="aba-internas">
-          <button class="g g--alto"  data-src="assets/img/int-sala-clara.webp"><img src="assets/img/int-sala-clara.webp" alt="Sala de estar clara com sofá curvo e mesa de centro" loading="lazy"></button>
-          <button class="g g--largo" data-src="assets/img/int-jantar-ripado.webp"><img src="assets/img/int-jantar-ripado.webp" alt="Sala de jantar com parede ripada e prateleiras de madeira" loading="lazy"></button>
-          <button class="g g--largo" data-src="assets/img/int-quarto-infantil.webp"><img src="assets/img/int-quarto-infantil.webp" alt="Quarto infantil com papel de parede do fundo do mar" loading="lazy"></button>
-          <button class="g g--alto"  data-src="assets/img/int-lavabo.webp"><img src="assets/img/int-lavabo.webp" alt="Lavabo em madeira com bancada de pedra e espelho redondo" loading="lazy"></button>
-          <button class="g g--alto"  data-src="assets/img/int-home-office.webp"><img src="assets/img/int-home-office.webp" alt="Home office com bancada de madeira e piso em espinha de peixe" loading="lazy"></button>
           <button class="g g--largo" data-src="assets/img/int-living-madeira.webp"><img src="assets/img/int-living-madeira.webp" alt="Living integrado com painéis de madeira escura e varanda" loading="lazy"></button>
+          <button class="g" data-src="assets/img/int-sala-clara.webp"><img src="assets/img/int-sala-clara.webp" alt="Sala de estar clara com sofá curvo e mesa de centro" loading="lazy"></button>
+          <button class="g" data-src="assets/img/int-lavabo.webp"><img src="assets/img/int-lavabo.webp" alt="Lavabo em madeira com bancada de pedra e espelho redondo" loading="lazy"></button>
+          <button class="g g--largo" data-src="assets/img/int-quarto-infantil.webp"><img src="assets/img/int-quarto-infantil.webp" alt="Quarto infantil com papel de parede do fundo do mar" loading="lazy"></button>
+          <button class="g" data-src="assets/img/int-home-office.webp"><img src="assets/img/int-home-office.webp" alt="Home office com bancada de madeira e piso em espinha de peixe" loading="lazy"></button>
+          <button class="g" data-src="assets/img/int-jantar-arte.webp"><img src="assets/img/int-jantar-arte.webp" alt="Sala de jantar com quadro colorido e estante" loading="lazy"></button>
+          <button class="g g--largo" data-src="assets/img/int-jantar-ripado.webp"><img src="assets/img/int-jantar-ripado.webp" alt="Sala de jantar com parede ripada e prateleiras de madeira" loading="lazy"></button>
           <button class="g g--largo" data-src="assets/img/int-varanda-rede.webp"><img src="assets/img/int-varanda-rede.webp" alt="Varanda com rede e plantas" loading="lazy"></button>
-          <button class="g g--alto"  data-src="assets/img/int-jantar-arte.webp"><img src="assets/img/int-jantar-arte.webp" alt="Sala de jantar com quadro colorido e estante" loading="lazy"></button>
         </div>
 
         <div class="galeria galeria--externas" id="port-externas" role="tabpanel" aria-labelledby="aba-externas" hidden>
-          <button class="g g--cheio" data-src="assets/img/ext-casa-1.webp"><img src="assets/img/ext-casa-1.webp" alt="Fachada de casa contemporânea com volume em concreto e palmeiras" loading="lazy"></button>
+          <button class="g g--largo" data-src="assets/img/ext-casa-1.webp"><img src="assets/img/ext-casa-1.webp" alt="Fachada de casa contemporânea com volume em concreto e palmeiras" loading="lazy"></button>
           <button class="g" data-src="assets/img/ext-casa-2.webp"><img src="assets/img/ext-casa-2.webp" alt="Casa com telhado em madeira e varanda" loading="lazy"></button>
           <button class="g" data-src="assets/img/ext-casa-3.webp"><img src="assets/img/ext-casa-3.webp" alt="Fachada com forro ripado e jardim suspenso" loading="lazy"></button>
-          <button class="g g--cheio" data-src="assets/img/ext-casa-4.webp"><img src="assets/img/ext-casa-4.webp" alt="Casa térrea com brise de madeira e escadaria" loading="lazy"></button>
+          <button class="g g--largo" data-src="assets/img/ext-casa-4.webp"><img src="assets/img/ext-casa-4.webp" alt="Casa térrea com brise de madeira e escadaria" loading="lazy"></button>
         </div>
 
-        <div class="portfolio__cta">
-          <p>Quer o seu projeto apresentado assim?</p>
-          <a class="btn btn--cafe wpp" data-msg="portfolio" href="#" target="_blank" rel="noopener">
-            <svg class="ico" aria-hidden="true"><use href="#i-wpp"/></svg>
-            Quero um orçamento
-          </a>
-        </div>
+        <a class="btn btn--cafe btn--cheio portfolio__cta wpp" data-msg="portfolio" href="#" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#i-wpp"/></svg>
+          Quero meu projeto assim
+        </a>
       </div>
     </section>
 
-    <!-- ===== Incluso ===== -->
-    <section class="incluso">
-      <div class="container incluso__inner">
-        <div class="incluso__titulo">
-          <p class="eyebrow">Em todas as produções</p>
-          <h2>O que já vem incluso</h2>
-          <p class="incluso__sub">Sem surpresa no meio do caminho. Cada projeto passa pelo mesmo cuidado, do primeiro bloquinho à pós-produção.</p>
-        </div>
-        <ul class="incluso__lista">
-          <li>Bloquinhos de alta qualidade</li>
-          <li>Refinamento de modelagem, para imagens ainda mais realistas</li>
-          <li>Configuração de todos os materiais e da iluminação</li>
-          <li>2 alterações por projeto nas imagens teste</li>
-          <li>Pós-produção com o efeito <em>uau</em> da Caramelo</li>
-          <li>Imagens em alta resolução + arquivo do SketchUp com a modelagem</li>
-          <li class="incluso__melhor">E o melhor: o acompanhamento pessoal da Caramelo em cada detalhe da criação das suas imagens</li>
+    <!-- Serviços -->
+    <section class="servicos" id="servicos">
+      <div class="container">
+        <header class="secao-topo">
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Do 2D à imagem que vende</h2>
+        </header>
+        <ul class="servicos__lista">
+          <li><strong>Renderização 3D</strong><span>Imagens realistas do seu projeto</span></li>
+          <li><strong>Modelagem 3D</strong><span>Do arquivo 2D à maquete completa</span></li>
+          <li><strong>Planta humanizada</strong><span>Sua planta baixa em 3D</span></li>
+          <li><strong>Imagens 360º</strong><span>O cliente dentro do projeto</span></li>
+          <li><strong>Vídeos</strong><span>O projeto ganhando vida</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- ===== Como funciona ===== -->
-    <section class="passos" id="como-funciona">
-      <div class="container">
-        <header class="secao-topo">
-          <p class="eyebrow eyebrow--caramelo">Como funciona</p>
-          <h2>Do seu arquivo à imagem final</h2>
-        </header>
-        <ol class="passos__lista">
-          <li>
-            <span class="passos__n">1</span>
-            <h3>Chame no WhatsApp</h3>
-            <p>Conte sobre o projeto: quais ambientes, quantas imagens e para quando você precisa.</p>
-          </li>
-          <li>
-            <span class="passos__n">2</span>
-            <h3>Receba seu orçamento</h3>
-            <p>Montamos uma proposta sob medida para o seu projeto, sem pacote engessado.</p>
-          </li>
-          <li>
-            <span class="passos__n">3</span>
-            <h3>Envie os arquivos</h3>
-            <p>Plantas 2D ou maquete no SketchUp, com as referências de materiais e mobiliário.</p>
-          </li>
-          <li>
-            <span class="passos__n">4</span>
-            <h3>Aprove e encante</h3>
-            <p>Você acompanha as imagens teste, pede até 2 alterações e recebe tudo em alta resolução.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ===== Sobre / Por que ===== -->
+    <!-- Sobre -->
     <section class="sobre" id="sobre">
       <div class="container sobre__inner">
         <figure class="moldura">
@@ -247,107 +131,51 @@
           </figcaption>
         </figure>
         <div class="sobre__texto">
-          <p class="eyebrow">Quem está por trás</p>
           <h2>Olá! Eu sou a Clara</h2>
-          <p>Estudante de Arquitetura e Urbanismo e criadora do Studio Caramelo. Há mais de três anos trabalho com <strong>renderização 3D</strong>, sempre buscando entregar <strong>qualidade excepcional</strong> para escritórios e profissionais como você.</p>
-          <p>Eu sei como é a rotina de quem projeta, porque também vivo a arquitetura. Por isso a Caramelo existe: para você ter mais tempo para criar, sem abrir mão de uma apresentação à altura do que você imaginou.</p>
-
-          <ul class="pilares">
-            <li>
-              <h3>Qualidade visual</h3>
-              <p>Imagem bonita vende projeto. Nosso foco é entregar o melhor resultado possível em cada cena.</p>
-            </li>
-            <li>
-              <h3>Padronização e consistência</h3>
-              <p>A mesma qualidade em todos os seus projetos, para o seu portfólio ter uma linguagem só.</p>
-            </li>
-            <li>
-              <h3>Atendimento próximo e humanizado</h3>
-              <p>Você fala direto com quem faz, acompanha o processo e não perde nada na comunicação.</p>
-            </li>
-          </ul>
+          <p>Há mais de 3 anos transformo projetos de arquitetas em imagens que encantam. Você fala direto comigo, do primeiro arquivo à imagem final.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
-    <section class="faq">
-      <div class="container container--estreito">
-        <header class="secao-topo">
-          <p class="eyebrow eyebrow--caramelo">Dúvidas frequentes</p>
-          <h2>Antes de chamar a gente</h2>
-        </header>
-        <details>
-          <summary>Quais arquivos eu preciso enviar?</summary>
-          <p>Se você já tem a maquete, envie o arquivo do SketchUp. Se ainda não tem, envie as plantas 2D (DWG ou PDF) e a gente faz a modelagem completa. Referências de materiais, cores e mobiliário ajudam muito.</p>
-        </details>
-        <details>
-          <summary>Quantas alterações estão incluídas?</summary>
-          <p>Cada projeto inclui 2 rodadas de alteração nas imagens teste, antes da finalização e da pós-produção.</p>
-        </details>
-        <details>
-          <summary>Eu recebo o arquivo da modelagem?</summary>
-          <p>Sim. Além das imagens em alta resolução, você recebe o arquivo do SketchUp com a modelagem.</p>
-        </details>
-        <details>
-          <summary>Quanto custa?</summary>
-          <p>Cada projeto é único: o valor depende do tipo de imagem, da quantidade e da complexidade. Chame no WhatsApp e receba um orçamento personalizado, sem compromisso.</p>
-        </details>
-        <details>
-          <summary>Vocês atendem fora da Bahia?</summary>
-          <p>Sim! Todo o processo é online, então atendemos arquitetas e escritórios de qualquer lugar do Brasil.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- ===== CTA final ===== -->
+    <!-- CTA final -->
     <section class="final" id="contato">
       <img class="final__swash" src="assets/img/logo-branco.png" alt="" aria-hidden="true">
       <div class="container final__inner">
-        <h2>Seu projeto merece ser visto<br><em>do jeito que você imaginou.</em></h2>
-        <p>Deixe o 3D com quem entende do assunto e volte a colocar energia no que só você pode fazer: criar.</p>
-        <a class="btn btn--claro btn--grande wpp" data-msg="geral" href="#" target="_blank" rel="noopener">
+        <h2>Seu projeto merece ser visto <em>do jeito que você imaginou.</em></h2>
+        <a class="btn btn--claro btn--cheio btn--grande wpp" data-msg="geral" href="#" target="_blank" rel="noopener">
           <svg class="ico" aria-hidden="true"><use href="#i-wpp"/></svg>
           Pedir orçamento no WhatsApp
         </a>
-        <ul class="contatos">
-          <li><a href="https://www.instagram.com/studiocaramelo.3d/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-insta"/></svg>@studiocaramelo.3d</a></li>
-          <li><a href="mailto:studiocaramelo3d@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>studiocaramelo3d@gmail.com</a></li>
-          <li><a class="wpp" data-msg="geral" href="#" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-tel"/></svg>(75) 99205-1279</a></li>
-        </ul>
+        <a class="insta" href="https://www.instagram.com/studiocaramelo.3d/" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#i-insta"/></svg>@studiocaramelo.3d
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="rodape">
     <div class="container rodape__inner">
-      <img src="assets/img/logo-cafe.png" alt="Caramelo 3D" width="120" height="28" loading="lazy">
-      <p>© <span id="ano">2026</span> Studio Caramelo 3D. Renderização 3D para arquitetura.</p>
+      <img src="assets/img/logo-cafe.png" alt="Caramelo 3D" width="110" height="26" loading="lazy">
+      <p>© <span id="ano">2026</span> Studio Caramelo 3D</p>
     </div>
   </footer>
 
-  <!-- Botão flutuante -->
   <a class="flutuante wpp" data-msg="geral" href="#" target="_blank" rel="noopener" aria-label="Pedir orçamento pelo WhatsApp">
     <svg aria-hidden="true"><use href="#i-wpp"/></svg>
-    <span>Orçamento</span>
   </a>
 
-  <!-- Lightbox -->
   <dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada">
     <button class="lightbox__fechar" aria-label="Fechar">×</button>
     <button class="lightbox__nav lightbox__nav--ant" aria-label="Imagem anterior">‹</button>
-    <img src="" alt="">
+    <img src="data:," alt="">
     <button class="lightbox__nav lightbox__nav--prox" aria-label="Próxima imagem">›</button>
   </dialog>
 
-  <!-- Ícones -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="i-wpp" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
-    <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6 8.5 7 8.5-7"/></g></symbol>
-    <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M5 3h3.5l1.5 4.5-2 1.5a12 12 0 0 0 7 7l1.5-2 4.5 1.5V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
   </svg>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>

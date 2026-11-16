@@ -92,7 +92,7 @@
 
   // ===== Animação de entrada =====
   if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    var alvos = document.querySelectorAll(".secao-topo, .card, .dor__grid > div, .dor__frase, .incluso__lista li, .passos__lista li, .pilares li, .portfolio__cta, .final__inner > *");
+    var alvos = document.querySelectorAll(".secao-topo, .servicos__lista li, .moldura, .sobre__texto, .final__inner > *");
     var io = new IntersectionObserver(function (ents) {
       ents.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add("is-visivel"); io.unobserve(en.target); }
