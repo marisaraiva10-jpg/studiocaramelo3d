@@ -9,7 +9,7 @@
 //   META_CAPI_TOKEN       (obrigatória, tipo "Secret") token gerado no Gerenciador de Eventos
 //   META_PIXEL_ID         (opcional) padrão: Pixel do Studio Caramelo 3D
 //   META_TEST_EVENT_CODE  (opcional) código da aba "Testar eventos"; apague depois de testar
-//   META_API_VERSION      (opcional) padrão: v23.0
+//   META_API_VERSION      (opcional) padrão: v26.0
 // Sem o token a função não manda nada e o site segue funcionando só com o Pixel.
 
 const PIXEL_PADRAO = '2167835010789845';
@@ -65,7 +65,7 @@ export async function onRequestPost({ request, env }) {
   if (env.META_TEST_EVENT_CODE) payload.test_event_code = env.META_TEST_EVENT_CODE;
 
   const pixel = env.META_PIXEL_ID || PIXEL_PADRAO;
-  const versao = env.META_API_VERSION || 'v23.0';
+  const versao = env.META_API_VERSION || 'v26.0';
   const resp = await fetch(
     `https://graph.facebook.com/${versao}/${pixel}/events?access_token=${encodeURIComponent(token)}`,
     { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) },
