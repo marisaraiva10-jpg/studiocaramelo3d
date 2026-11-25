@@ -1,6 +1,25 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+  <!-- Meta: API de Conversões (functions/capi.js) ==========================
+       Cada evento vai pelo Pixel (tags do GTM) e pelo servidor (/capi) com o mesmo
+       event_id, para a Meta contar uma vez só. O GTM lê o id em meta_pageview_id
+       (PageView) e meta_event_id (Lead do evento whatsapp_click, em assets/js/main.js). -->
+  <script>
+    function metaId(nome) { return nome + '.' + Date.now() + '.' + Math.random().toString(36).slice(2, 10); }
+    function enviarCapi(nome, id, dados) {
+      try {
+        var corpo = JSON.stringify({event_name: nome, event_id: id, event_source_url: location.href, custom_data: dados || {}});
+        if (!(navigator.sendBeacon && navigator.sendBeacon('/capi', new Blob([corpo], {type: 'application/json'}))))
+          fetch('/capi', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: corpo, keepalive: true});
+      } catch (e) {}
+    }
+    var metaPageViewId = metaId('PageView');
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({meta_pageview_id: metaPageViewId});
+    // O servidor manda o PageView quando a página carrega, para o cookie _fbp do Pixel já existir
+    window.addEventListener('load', function(){ enviarCapi('PageView', metaPageViewId); });
+  </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

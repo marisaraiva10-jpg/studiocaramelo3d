@@ -18,9 +18,13 @@
     var msg = MENSAGENS[a.dataset.msg] || MENSAGENS.geral;
     a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg);
     a.addEventListener("click", function () {
-      // Avisa o Google Tag Manager; lá o evento vira "Contact" no Pixel da Meta.
+      // Avisa o Google Tag Manager; lá o evento vira "Lead" no Pixel da Meta (tag "Meta Pixel - Lead WhatsApp").
+      // O mesmo Lead vai pela API de Conversões (/capi) com o mesmo event_id (ver index.html).
+      var origem = a.dataset.msg || "geral";
+      var id = window.metaId ? metaId("Lead") : "";
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: "whatsapp_click", origem: a.dataset.msg || "geral" });
+      window.dataLayer.push({ event: "whatsapp_click", origem: origem, meta_event_id: id });
+      if (window.enviarCapi) enviarCapi("Lead", id, { content_name: origem });
     });
   });
 
